@@ -1,3 +1,14 @@
+@media only screen and (min-width: 768px) {
+  .containerku {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    background: blue !important;
+  }
+  body {
+    background: black !important;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,15 +17,72 @@
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 120px;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  border: 1px solid yellow;
 }
 
-.containerku {
-  padding: 0;
+.top-bar {
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  background: #4D4F6C;
+  color: #f1f1f1;
+}
+
+.top-bar .kiri {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 5px 7px;
+}
+
+.top-bar .kiri .call {
+  height: 30px;
+  margin-top: 5px;
+}
+
+.top-bar .kiri ul li {
+  font-size: 12px;
+}
+
+.top-bar .kanan {
+  width: 50%;
+  text-align: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.top-bar .kanan .cta {
+  font-size: 12px;
+  padding: 10px 20px;
+  color: #f1f1f1;
+  background: #25B58A;
 }
 
 .navbar {
+  border: 2px solid hotpink;
+  margin-top: 60px;
+  -ms-flex-item-align: center;
+      align-self: center;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,9 +92,29 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-image: -webkit-gradient(linear, left top, right top, from(#868f96), to(#596164));
-  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+  background: rgba(244, 249, 244, 0.45);
   width: 100%;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
   min-height: 60px;
+}
+
+.navbar .navbar-collapse {
+  border: 2px solid green !important;
+  height: 80vh !important;
+}
+
+.navbar .navbar-collapse .navbar-nav a {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  font-size: 28px;
 }
 /*# sourceMappingURL=main.css.map */
